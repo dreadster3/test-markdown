@@ -24,7 +24,10 @@ jobs:
         with:
           python-version: ${{env.PYTHON_VERSION}}
 
+      - name: Install Markdown Renderer
+        run: |
+          python tools/setup.py
+
       - name: Test
         run: |
-          ls
-          ls tools
+          render_markdown --help
