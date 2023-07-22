@@ -30,6 +30,7 @@ jobs:
           pip install .
           cd ../
 
-      - name: Test
+      - name: Render Files
         run: |
-          render_markdown --help
+          render_markdown -v variables.json ./template_markdown.md ./README.md extra=some_extra_variable
+          cat README.md
