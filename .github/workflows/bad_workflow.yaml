@@ -1,4 +1,4 @@
-name: Render Markdown
+name: Bad Workflow
 
 on:
   workflow_dispatch:
