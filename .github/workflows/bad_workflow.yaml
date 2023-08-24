@@ -1,0 +1,14 @@
+name: Render Markdown
+
+on:
+  workflow_dispatch:
+
+env:
+  PYTHON_VERSION: "3.10"
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Error
+        run: exit 1
