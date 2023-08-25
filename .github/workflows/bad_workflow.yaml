@@ -11,4 +11,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Error
-        run: exit 1
+        run: |
+          sleep 2
+          exit 1
