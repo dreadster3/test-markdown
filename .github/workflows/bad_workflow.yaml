@@ -12,5 +12,5 @@ jobs:
     steps:
       - name: Error
         run: |
-          sleep 10
+          sleep 120
           exit 1

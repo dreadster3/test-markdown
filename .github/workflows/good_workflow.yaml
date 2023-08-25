@@ -12,5 +12,5 @@ jobs:
     steps:
       - name: Hello World
         run: |
-          sleep 10
+          sleep 120
           echo "Hello World"
