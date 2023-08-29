@@ -14,3 +14,13 @@ jobs:
         run: |
           sleep 120
           echo "Hello World"
+      - name: Again
+        run: echo "Hello World"
+  another_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Step 1
+        run: |
+          echo "Hello"
+      - name: Step 2
+        run: echo "Hello"
