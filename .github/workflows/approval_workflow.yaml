@@ -1,0 +1,26 @@
+name: Approval Workflow
+
+on:
+  workflow_dispatch:
+
+env:
+  PYTHON_VERSION: "3.10"
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hello World
+        run: |
+          echo "Hello World"
+      - name: Again
+        run: echo "Hello World"
+  another_job:
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - name: Step 1
+        run: |
+          echo "Hello"
+      - name: Step 2
+        run: echo "Hello"
